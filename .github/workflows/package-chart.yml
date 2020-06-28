@@ -18,6 +18,6 @@ jobs:
     - name: Release
       uses: helm/chart-releaser-action@master
       with:
-        charts_dir: deploy/charts/
+        charts_dir: deploy/charts/k8s-postgresql/
       env:
         CR_TOKEN: ${{ secrets.CR_TOKEN }}
